@@ -4,4 +4,4 @@
 
 <br> Hi Folks :wave: <br>
 
-In this repository, we upload the questions that we solve on leetcode every day, and the questions are categorized by topic, such as Bit Manipulation, Math, Array, Stack, and so on.
+In this repository, we upload the questions that we solve on leetcode every day, and the questions are categorized by topic, such as **Bit Manipulation**, **Math**, **Array**, **Stack**, and so on.
