@@ -3,7 +3,6 @@
 </p>
 
 <br> Hi Folks :wave: <br>
-
 In this repository, we upload the questions that we solve on leetcode every day, and the questions are categorized by topic like:
  - **Bit Manipulation**
  - **Math**
