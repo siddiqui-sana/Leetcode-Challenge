@@ -1,0 +1,35 @@
+class Solution:
+    def uniqueMorseRepresentations(self, words: List[str]) -> int:
+        d={"a":".-", 
+           "b":"-...",
+           "c":"-.-.",
+           "d":"-..",
+           "e":".",
+           "f":"..-.",
+           "g":"--.",
+           "h":"....",
+           "i":"..",
+           "j":".---",
+           "k":"-.-",
+           "l":".-..",
+           "m":"--",
+           "n":"-.",
+           "o":"---",
+           "p":".--.",
+           "q":"--.-",
+           "r":".-.",
+           "s":"...",
+           "t":"-",
+           "u":"..-",
+           "v":"...-",
+           "w":".--",
+           "x":"-..-",
+           "y":"-.--",
+           "z":"--.."}
+        set_of_unique_code=set()
+        for word in words:
+            word_morse_code=[]
+            for letter in word:
+                word_morse_code.append(d[letter])
+            set_of_unique_code.add("".join(word_morse_code))
+        return len(set_of_unique_code)
