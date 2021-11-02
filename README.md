@@ -2,8 +2,6 @@
   <img width="20%" src="https://user-images.githubusercontent.com/69134468/139599658-8471e6db-f919-4606-899c-88d5b6e5d71a.png"/>
 </p>
 
-### Our Team:
+<br> Hi Folks :wave: <br>
 
-<a href="https://github.com/Iamtripathisatyam/Leetcode-Challenge/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Iamtripathisatyam/Leetcode-Challenge"/>
-</a>
+In this repository, we upload the questions that we solve on leetcode every day, and the questions are categorized by topic, such as Bit Manipulation, Math, Array, Stack, and so on.
