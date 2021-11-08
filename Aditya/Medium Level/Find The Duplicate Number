@@ -1,8 +1,0 @@
-class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
-        visited=len(nums)*[False]
-        for num in nums:
-            if visited[num]:
-                return num
-            visited[num]=True
-        return -1

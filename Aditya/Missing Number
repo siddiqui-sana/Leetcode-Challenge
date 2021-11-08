@@ -1,7 +1,0 @@
-class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        i,j=0,0
-        for k in range(len(nums)):
-            i^=nums[k]
-            j^=(k+1)
-        return i^j
