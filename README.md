@@ -3,7 +3,7 @@
 </p>
 
 <br> Hi Folks :wave: <br>
-In this repository, we upload the questions that we solve on leetcode every day, and the questions are categorized by topic like:
+In this repository, I will upload the questions that I solve on leetcode every day, and the questions are categorized by topic like:
  - **Bit Manipulation**
  - **Math**
  - **Recursion**
