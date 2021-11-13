@@ -1,5 +1,6 @@
 class Solution:
 	def containsDuplicate(self, nums: List[int]) -> bool:
+		
 		# Time and Space: O(n)
 		# 1st Approach:
 		hashSet = set()
