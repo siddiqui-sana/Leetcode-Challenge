@@ -1,23 +1,3 @@
-# import heapq
-# class Solution(object):
-#     # Time: O(nlogn), Space: O(n)
-#     def findClosestElements(self, arr, k, x):
-#         heap = []
-#         res = []
-#         # nlogn
-#         for i in range(len(arr)):  # n
-#             heap.append((abs(x-arr[i]), arr[i]))
-#         # heapify() - logn
-#         # Means smallest at the first position - all times...
-#         heapq.heapify(heap)
-#         # nlogn
-#         for _ in range(k):  # n
-#             # heappop() - logn
-#             # Append the values accordingly...
-#             res.append(heapq.heappop(heap)[1])
-#         return sorted(res)  # nlogn
-
-
 # Using Heap:
 import heapq
 class Solution(object):
@@ -26,15 +6,17 @@ class Solution(object):
         heap = []
         res = []
         # nlogn
-        for i in range(len(arr)): # n
+        for i in range(len(arr)):  # n
             heap.append((abs(x-arr[i]), arr[i]))
         # heapify() - logn
-        heapq.heapify(heap) # Means smallest at the first position - all times...
+        # Means smallest at the first position - all times...
+        heapq.heapify(heap)
         # nlogn
-        for _ in range(k): # n
+        for _ in range(k):  # n
             # heappop() - logn
-            res.append(heapq.heappop(heap)[1]) # Append the values accordingly...
-        return sorted(res) # nlogn
+            # Append the values accordingly...
+            res.append(heapq.heappop(heap)[1])
+        return sorted(res)  # nlogn
 
 
 # Using Binary Search:
@@ -44,21 +26,20 @@ class Solution(object):
         low = 0
         high = n-1
         while low <= high:
-            # Base cases
-            if (arr[high] <= x):
-                mid = high
-                break
-
-            if (arr[low] > x):
-                mid = low
-                break
             mid = low+(high-low)//2
-            if (arr[mid] <= x and arr[mid + 1] > x):
+            if arr[mid] == x:
                 break
             elif arr[mid] < x:
                 low = mid+1
             else:
                 high = mid-1
+        if mid == 0:
+            low = mid
+            high = mid+1
+        else:
+            low = mid-1
+            high = mid
+
         low = mid
         high = mid+1
         res = []
