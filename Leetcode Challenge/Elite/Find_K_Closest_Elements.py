@@ -1,4 +1,4 @@
-Using Heap:
+# Using Heap:
 import heapq
 class Solution(object):
     # Time: O(nlogn), Space: O(n)
