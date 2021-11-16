@@ -1,4 +1,4 @@
-# Using Heap:
+Using Heap:
 import heapq
 class Solution(object):
     # Time: O(nlogn), Space: O(n)
@@ -39,9 +39,6 @@ class Solution(object):
         else:
             low = mid-1
             high = mid
-
-        low = mid
-        high = mid+1
         res = []
         while k > 0 and low >= 0 and high < n:
             if abs(arr[low]-x) <= abs(arr[high]-x):
