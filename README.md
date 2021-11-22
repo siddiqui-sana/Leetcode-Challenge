@@ -16,4 +16,4 @@ In this repository, I will upload the questions that I solve on leetcode every d
  - **Heap**
  - **Tries**
  
-**Note**: *I'm working on it, and certain topics have been left off. I'll look through them as time goes, and after 4-5 months, mostly solutions will be available...*
+**Note**: *I'm working on it, and certain topics have been left off. I'll look through them as time goes, and after 4-5 months, mostly solutions will be available.*
